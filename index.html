@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vajk - Porto - Responsive HTML5 Template</title>
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media_queries.css">
+  <link rel="icon" type="image/png" href="https://www.okler.net/previews/porto/8.3.0/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+
+  <!--==========================================================================
+  ============================= NAV FELSO ======================================
+  ===========================================================================-->
+  <section id="nav-felso" class="container">
+    <section class="nav-felso__bal">
+      <div class="nav-felso__cim-tel-email cim jobb-border">
+        <i class="far fa-dot-circle fa-sm"></i>
+        <a href="#">1047 Attila utca, Budapest</a>
+      </div>
+      <div class="nav-felso__cim-tel-email telefon jobb-border">
+        <i class="fab fa-whatsapp fa-sm"></i>
+        <a href="tel:+36704081703">+36 70 408 1703</a>
+      </div>
+      <div class="nav-felso__cim-tel-email mail">
+        <i class="far fa-envelope fa-sm"></i>
+        <a href="mailto:vajk93@icloud.com">vajk93@icloud.com</a>
+      </div>
+    </section>
+    <section class="nav-felso__jobb">
+      <div class="nav-felso__blog-english blog jobb-border">
+        <a href="#">Blog</a>
+      </div>
+      <div class="nav-felso__blog-english english">
+        <button onclick="toggleLanguage()" href="#"><img class="usa-flag" src="images/flags/usa-zaszlo.png" alt="usa-flag"> English<ion-icon name="chevron-down-outline" class="english-icon"></ion-icon>
+          </button>
+      </div>
+    </section>
+  </section>
+  <!--====================== LANGUAGE CHANGER DIV =============================-->
+  <section id="languagesDiv" class="nav-felso__nyelv-kivalasztasa">
+    <div>
+      <img class="usa-flag" src="images/flags/usa-zaszlo.png" alt="usa-flag">
+      <p>English</p>
+    </div>
+    <div>
+      <img class="usa-flag" src="images/flags/spanyol-zaszlo.png" alt="usa-flag">
+      <p>Espanol</p>
+    </div>
+    <div>
+      <img class="usa-flag" src="images/flags/francia-zaszlo.png" alt="usa-flag">
+      <p>Francaise</p>
+    </div>
+  </section>
+
+  <!--==========================================================================
+  ============================ NAV ALSO ========================================
+  ===========================================================================-->
+  <section id="nav-also" class="nav-also">
+    <div class="container">
+      <div class="logo-div">
+        <img src="images/logos/logo-navbar.png" class="porto-logo">
+      </div>
+      <div class="linkek-div">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html">ELEMENTS</a></li>
+          <li><a href="index.html">FEATURES</a></li>
+          <li><a href="index.html">PAGES</a></li>
+          <li><a href="index.html">PORTFOLIO</a></li>
+          <li><a href="index.html">BLOG</a></li>
+          <li><a href="index.html">SHOP</a></li>
+        </ul>
+      </div>
+      <div class="nav-also-icons">
+        <img class="search-icon" src="images/nav-icons/search.png" alt="">
+        <img class="bag-icon" src="images/nav-icons/shopping-bags.png" alt="">
+        <sup>
+          <img class="notification" src="images/nav-icons/notification.png">
+        </sup>
+        </i>
+        <i class="fas fa-bars fa-sm" id="barIconId" onclick="toggleMobileNav()"></i>
+      </div>
+   </div>
+
+   <!-- ======================= LENYÍLÓ MOBIL NAVBAR TETEJE ================ -->
+       <section id="mobileNav">
+         <div class="container">
+           <div class="mobileNav__home-link-div">
+             <a href="index.html">home</a>
+             <ion-icon name="chevron-down-outline"></ion-icon>
+           </div>
+           <div>
+             <a href="index.html">elements</a>
+             <ion-icon name="chevron-down-outline"></ion-icon>
+           </div>
+           <div>
+             <a href="index.html">features</a>
+             <ion-icon name="chevron-down-outline"></ion-icon>
+           </div>
+           <div>
+             <a href="index.html">pages</a>
+             <ion-icon name="chevron-down-outline"></ion-icon>
+           </div>
+           <div>
+             <a href="index.html">portfolio</a>
+             <ion-icon name="chevron-down-outline"></ion-icon>
+           </div>
+           <div>
+             <a href="index.html">blog</a>
+             <ion-icon name="chevron-down-outline"></ion-icon>
+           </div>
+           <div class="border-bottom">
+             <a href="index.html">shop</a>
+             <ion-icon name="chevron-down-outline"></ion-icon>
+           </div>
+         </div>
+       </section>
+       <!-- ===================== LENYÍLÓ MOBIL NAVBAR ALJA ================ -->
+</section>
+
+
+  <!--==========================================================================
+  ================================== HERO ======================================
+  ===========================================================================-->
+  <section id="hero" class="container">
+      <img src="images/hero/hero-background-img-1.jpg" alt="">
+      <p class="header-hello-text">HELLO, THIS IS</p>
+      <h1 class="header-title-h1-1">PORTO HTML TEMPLATE</h1>
+      <p class="header-also-p-1">Trusted by over 40,000 satisfied users.</p>
+      <a href="#"><p>GET STARTED NOW!</p></a>
+  </section>
+  
+
+  <!--==========================================================================
+  ================================ 3 BLACK LEFT ICONS ==========================
+  ===========================================================================-->
+  <section id="fixed-icons">
+    <i class="fas fa-cogs fa-xs" onclick="changeColor()"><button class="button-1">Style Switcher</button></i>
+    <i class="fas fa-shopping-cart fa-xs"><button class="button-2">Buy Porto</button></i>
+    <div class="harmadik-icon-div">
+      <img src="https://www.okler.net/previews/porto/8.3.0/img/icons/demos-redirect.png" alt="fekete-icon-kep">
+      <p>Demos</p>
+    </div>
+  </section>
+
+  <!--============================= COLOR CHANGER =============================-->
+  <section id="colorChanger" class="color-changer">
+    <div class="color-changer__belso-div">
+      <p>Change color</p>
+      <p onclick="changeToRed()">Red</p>
+      <p onclick="changeToGreen()">Green</p>
+      <p onclick="changeToOrange()">Orange</p>
+      <p onclick="changeToOriginal()">Back To Original</p>
+    </div>
+  </section>
+  <!--==========================================================================
+  ======================== BEMUTATKOZÁS - HERO ALATT ===========================
+  ===========================================================================-->
+  <main id="bemutatkozas" class="container">
+    <section class="main-element1">
+      <div class="main-leiras egy-nagy">
+        <p class="main-title"><strong>Who </strong>We Are</p>
+        <p class="main-lorem-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dignissimos excepturi optio nihil velit repellat, incidunt quas asperiores repellat, incidunt quas asperiores repellat, incidunt quas asperiores quas
+          asperiores.</p>
+        <p class="main-lorem-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ratione, laboriosam.</p>
+        <p class="main-view-more">VIEW MORE <ion-icon name="chevron-forward-outline" class="main-view-more-icon"></ion-icon>
+        </p>
+      </div>
+    </section>
+
+    <section class="main-element2">
+      <div class="main-leiras kicsi1">
+        <i class="far fa-user"></i>
+        <div class="main-kicsi-1-text-div">
+          <h3>Customer Support</h3>
+          <p class="lorem-negy-kicsi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolore voluptates ut.</p>
+        </div>
+      </div>
+      <div class="main-leiras kicsi2">
+        <i class="far fa-calendar-alt"></i>
+        <div class="main-kicsi-1-text-div">
+          <h3>Sliders</h3>
+          <p class="lorem-negy-kicsi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolore sit amet, consectetur sit amet, consectetur adipisicing voluptates ut.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-element3">
+      <div class="main-leiras kicsi3">
+        <i class="far fa-star"></i>
+        <div class="main-kicsi-1-text-div">
+          <h3>Icons</h3>
+          <p class="lorem-negy-kicsi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolore voluptates ut .</p>
+        </div>
+      </div>
+      <div class="main-leiras kicsi4">
+        <i class="fas fa-tint"></i>
+        <div class="main-kicsi-1-text-div">
+          <h3>Colors</h3>
+          <p class="lorem-negy-kicsi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, sit amet, consectetur adipisicing sit amet, consectetur dolore voluptates ut.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==========================================================================
+  ============================ 5 IMAGE =========================================
+  ===========================================================================-->
+  <section class=five-image-title>
+    <p><strong>Projects </strong>&<strong> Clients</strong></p>
+  </section>
+
+  <section id="five-image">
+    <div>
+      <img src="images/five-images/five-image-1.jpeg" alt="telefon-tartas-kep">
+      <i class="fas fa-plus"></i>
+      <p>Project Title</p>
+      <a href="#">Project Type</a>
+    </div>
+    <div>
+      <img src="images/five-images/five-image-2.jpeg" alt="telefon-tartas-kep">
+      <i class="fas fa-plus"></i>
+      <p>Project Title</p>
+      <a href="#">Project Type</a>
+    </div>
+    <div>
+      <img src="images/five-images/five-image-3.jpeg" alt="telefon-tartas-kep">
+      <i class="fas fa-plus"></i>
+      <p>Project Title</p>
+      <a href="#">Project Type</a>
+    </div>
+    <div>
+      <img src="images/five-images/five-image-4.jpeg" alt="telefon-tartas-kep">
+      <i class="fas fa-plus"></i>
+      <p>Project Title</p>
+      <a href="#">Project Type</a>
+    </div>
+    <div>
+      <img src="images/five-images/five-image-5.jpeg" alt="telefon-tartas-kep">
+      <i class="fas fa-plus"></i>
+      <p>Project Title</p>
+      <a href="#">Project Type</a>
+    </div>
+  </section>
+
+  <!--==========================================================================
+  ============================= WIREFRAMES =====================================
+  ===========================================================================-->
+  <section id="wireframes">
+    <div class="container">
+      <img class="mobile-view" src="images/wireframes/vizsga-logo-1.png" alt="wireframes-1">
+      <img class="tablet-view" src="images/wireframes/vizsga-logo-2.png" alt="wireframes-2">
+      <img class="tablet-view" src="images/wireframes/vizsga-logo-3.png" alt="wireframes-3">
+      <img class="tablet-view" src="images/wireframes/vizsga-logo-4.png" alt="wireframes-4">
+      <img class="tablet-view" src="images/wireframes/vizsga-logo-5.png" alt="wireframes-5">
+      <img class="desktop-view" src="images/wireframes/vizsga-logo-6.png" alt="wireframes-6">
+      <img class="desktop-view" src="images/wireframes/vizsga-logo-2.png" alt="wireframes-7">
+    </div>
+  </section>
+
+  <!--==========================================================================
+  ============================= TESTIMONIAL ====================================
+  ===========================================================================-->
+  <section id="testimonial">
+    <div class="container">
+      <div class="idezojel-icon-1">
+        <i class="fas fa-quote-left fa-lg"></i>
+      </div>
+
+      <div class="testimonial__tartalom">
+        <img src="https://www.okler.net/previews/porto/8.3.0/img/clients/client-1.jpg" alt="emberke-kep">
+        <blockquote class="ertekelos-lorem-div ertekeles-lorem">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. dolor sit amet, consectetur consectetur Temporibus assumenda rem at
+          architecto quisquam dolore
+          nemo ex accusantium harum suscipit quas porro, nostrum culpa, perferendis maiores aliquid doloremque laboriosam a enim veritatis ea deserunt cum! Similique consequatur explicabo ab ipsa.
+        </blockquote>
+        <p>- John Smith. Okler</p>
+      </div>
+
+      <div class="idezojel-icon-2">
+        <i class="fas fa-quote-right fa-lg"></i>
+      </div>
+    </div>
+
+  </section>
+
+  <!--==========================================================================
+  =============================== POSTS ========================================
+  ===========================================================================-->
+  <section id="posts">
+    <div class="container">
+      <p><strong>Latest </strong>Posts</p>
+    </div>
+    <div class="utolso-negyes-elemek container">
+      <section>
+        <div class="naptar-elem-kep">
+          <img src="images/calendars/15.png" alt="kis-naptar-15">
+        </div>
+        <div class="naptar-elem-szoveg">
+          <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">read more </a>
+          <ion-icon name="chevron-forward-outline" class="kis-naptar-read-more-icon"></ion-icon>
+        </div>
+      </section>
+
+      <section>
+        <div class="naptar-elem-kep">
+          <img src="images/calendars/14.png" alt="kis-naptar-14">
+        </div>
+        <div class="naptar-elem-szoveg">
+          <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">read more </a>
+          <ion-icon name="chevron-forward-outline" class="kis-naptar-read-more-icon"></ion-icon>
+        </div>
+      </section>
+
+      <section>
+        <div class="naptar-elem-kep">
+          <img src="images/calendars/13.png" alt="kis-naptar-13">
+        </div>
+        <div class="naptar-elem-szoveg">
+          <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">read more </a>
+          <ion-icon name="chevron-forward-outline" class="kis-naptar-read-more-icon"></ion-icon>
+        </div>
+      </section>
+
+      <section>
+        <div class="naptar-elem-kep">
+          <img src="images/calendars/12.png" alt="kis-naptar-12">
+        </div>
+        <div class="naptar-elem-szoveg">
+          <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">read more </a>
+          <ion-icon name="chevron-forward-outline" class="kis-naptar-read-more-icon"></ion-icon>
+        </div>
+      </section>
+
+    </div>
+  </section>
+  <!--==========================================================================
+  ================================= CONTACT ====================================
+  ===========================================================================-->
+
+  <!-- GET IN TOUCH teteje -->
+  <section id="#getInTouch">
+    <div class="container get-in-touch-div">
+      <p class="get-in-touch">Get In Touch</p>
+    </div>
+  </section>
+  <!-- GET IN TOUCH alja -->
+
+  <section id="contact">
+    <!-- <div class="container">
+      <p class="get-in-touch">Get In Touch</p>
+    </div> -->
+    <div class="container">
+      <!--========================== CONTACT-1 ==============================-->
+      <section class="kapcsolat-div-1">
+        <div class="kapcsolat-porto-div">
+          <img class="kapcsolat-porto-logo" src="images/logos/logo-footer.png" alt="porto-logo-feher">
+        </div>
+        <div class="kapcsolat-lorem-div">
+          <p class="kapcsolat-lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eius asperiores sed atque fugit vel delectus facilis molestiae mollitia. Dicta, doloribus placeat ab odio blanditiis.</p>
+        </div>
+        <div class="">
+          <a href="#" class="kapcsolat-view-more">VIEW MORE </a>
+          <ion-icon name="chevron-forward-outline" class="kapcsolat-view-more-icon"></ion-icon>
+        </div>
+      </section>
+      <!--========================== CONTACT-2 ==============================-->
+      <section class="kapcsolat-div-2">
+        <p class="kapcsolat-contact-us">CONTACT US</p>
+        <div class="kapcsolat-icon-es-text-div">
+          <i class="far fa-dot-circle fa-sm kapcsolat-icon"></i>
+          <p class="kapcsolat-contact-text">234 Street Name, City Name</p>
+        </div>
+        <div class="kapcsolat-icon-es-text-div">
+          <i class="fab fa-whatsapp fa-sm kapcsolat-icon"></i>
+          <p class="kapcsolat-contact-text contact__tel">(800) 123-4567</p>
+        </div>
+        <div class="kapcsolat-icon-es-text-div">
+          <i class="far fa-envelope fa-sm kapcsolat-icon"></i>
+          <p class="kapcsolat-contact-text">mail@example.com</p>
+        </div>
+      </section>
+      <!--========================== CONTACT-3 ==============================-->
+      <section class="kapcsolat-div-3">
+        <div class="kapcsolat-3-icon-es-p">
+          <ion-icon name="chevron-forward-outline" class="kapcsolat-3-icon"></ion-icon>
+          <p class="kapcsolat-3-contact-text">FAQ's</p>
+        </div>
+        <div class="kapcsolat-3-icon-es-p">
+          <ion-icon name="chevron-forward-outline" class="kapcsolat-3-icon"></ion-icon>
+          <p class="kapcsolat-3-contact-text">Sitemap</p>
+        </div>
+        <div class="kapcsolat-3-icon-es-p">
+          <ion-icon name="chevron-forward-outline" class="kapcsolat-3-icon"></ion-icon>
+          <p class="kapcsolat-3-contact-text">Contact Us</p>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!--==========================================================================
+  ============================= FOOTER =========================================
+  ===========================================================================-->
+  <footer id="footer">
+        <p>&copy; Turóczy Vajk vizsgaoldal 2021</p>
+        <a href="https://www.okler.net/previews/porto/9.0.0/index-corporate-5.html" target="_blank"> | Eredeti |</a>
+        <a href="https://www.facebook.com/vajk.turoczy.5/ " target="_blank"><i class="fab fa-facebook"></i></a>
+  </footer>
+
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="javascript.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+/* container settings - top */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* desktop */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px !important;
+    margin: 0 auto !important;
+  }
+}
+/* container setings - bottom */
+
+
+@media screen and (min-width: 575px) {
+  html {
+    font-size: 1.1rem;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+/*=============== RESPONSÍV hiding in the upper nav - TOP==============*/
+@media screen and (min-width: 990px) {
+  .blog {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .mail {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .cim {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* language changer refreshing */
+@media screen and (min-width: 1500px) {
+  /* refresh */
+  .nav-felso__nyelv-kivalasztasa {
+    position: absolute;
+    right: 390px;
+  }
+  /* refresh bottom */
+}
+/*=============== RESPONSÍV hiding in upper nav - BOTTOM ================*/
+
+
+@media screen and (min-width: 990px) {
+  /* need id!!! dont good if we dont have it before the class! */
+  #nav-also .linkek-div ul {
+    display: block;
+    display: flex;
+  }
+
+  /* need id!!! dont good if we dont have it before the class! */
+  #nav-also .fa-bars {
+    display: none;
+  }
+
+  #mobileNav {
+    display: none !important;
+  }
+
+  #fixed-icons {
+    display: block;
+  }
+}
+
+/*=============================== HERO =======================================*/
+@media screen and (max-width: 730px){
+  .header-hello-text {
+    top: 60px;
+  }
+  .header-title-h1-1 {
+    top:80px;
+  }
+  .header-also-p-1 {
+    top:100px;
+  }
+  #hero a {
+    top:120px;
+  }
+}
+
+
+
+/*============================ who we are section ==================================*/
+/******* IPAD LANDSCAPE - top *******/
+@media only screen and (min-width: 770px) {
+  .main-title {
+    padding-top: 20px;
+  }
+
+  .kicsi2 h3,
+  .kicsi4 h3 {
+    padding-top: 25px;
+  }
+
+  .kicsi2 i,
+  .kicsi4 i {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 1129) {
+  .main-title {
+    padding-top: 20px;
+  }
+
+  .kicsi2 h3,
+  .kicsi4 h3 {
+    padding-top: 25px;
+  }
+
+  .kicsi2 i,
+  .kicsi4 i {
+    margin-top: 25px;
+  }
+}
+
+/******* IPAD LANDSCAPE - bottom*******/
+@media (min-width: 1130px) {
+  #bemutatkozas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  #bemutatkozas section {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  .main-element1,
+  .main-element2,
+  .main-element3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+    padding-top: 16px;
+  }
+
+  .kicsi2, .kicsi4 {
+    margin-top: 60px;
+  }
+
+  .main-leiras {
+    width: 100%;
+  }
+}
+
+/*============================== 5 image section =======================================*/
+@media screen and (min-width: 575px) {
+  #five-image {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #five-image div {
+    width: 20%;
+  }
+
+  #five-image p {
+    position: absolute;
+    top: 35%;
+  }
+
+  #five-image a {
+    position: absolute;
+    top: 55%;
+  }
+}
+
+/*============================= WIREFRAMES ===================================*/
+@media screen and (min-width: 770px) {
+  #wireframes {
+    max-width: 90%;
+  }
+
+  #wireframes img {
+    width: 160px;
+  }
+
+  #wireframes .tablet-view {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  #wireframes .desktop-view {
+    display: block;
+  }
+}
+
+/*============================= TESTIMONIAL ==================================*/
+@media screen and (min-width:640px) {
+  #testimonial {
+    height: 500px;
+  }
+
+  #testimonial {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .idezojel-icon-1 {
+    padding-top: 70px;
+  }
+
+  .idezojel-icon-2 {
+    padding-top: 200px;
+  }
+
+  .testimonial__tartalom {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ertekelos-lorem-div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:780px) {
+  .idezojel-icon-1 {
+    padding-top: 60px;
+  }
+
+  .idezojel-icon-2 {
+    padding-top: 180px;
+  }
+}
+
+/*================================= POSTS ====================================*/
+@media (min-width: 640px) {
+  #posts {
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+  #posts section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    width: 25%;
+  }
+
+  .utolso-negyes-elemek {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .utolso-negyes-elem {
+    height: 75%;
+  }
+
+  #posts p:nth-child(1) {
+    padding-bottom: 0;
+  }
+
+  /*================================= CONTACT ==================================*/
+  @media screen and (min-width: 770px) {
+    #contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background: #212529;
+      padding-left: 0px;
+    }
+
+    #contact .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .kapcsolat-div-1 {
+      width: 50%;
+    }
+
+    .kapcsolat-div-2 {
+      width: 25%;
+    }
+
+    .kapcsolat-contact-us {
+      margin-top: 0;
+    }
+
+    .kapcsolat-div-3 {
+      width: 25%;
+    }
+
+    .kapcsolat-icon {
+      padding-top: 10px;
+      font-size: 17px !important;
+    }
+  }

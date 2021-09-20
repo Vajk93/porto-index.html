@@ -1,0 +1,87 @@
+@keyframes header-hello-text {
+  0% {
+    opacity: 0;
+    right: -50px;
+  }
+  20% {
+    opacity: 1;
+    right:0;
+  }
+  97% {
+    opacity: 1;
+    right:0;
+  }
+  100% {
+    opacity:0;
+    right: -50px;
+  }
+}
+
+
+@keyframes header-title-h1-1 {
+  0% {
+    opacity: 0;
+left: -70px;
+  }
+  20% {
+    opacity: 0;
+    left: -70px;
+  }
+  40% {
+    opacity: 1;
+    left:0;
+  }
+  97% {
+    opacity: 1;
+    left:0px;
+  }
+  100% {
+    opacity:0;
+    left:-70px;
+
+  }
+}
+
+@keyframes header-also-p-1 {
+  0% {
+    opacity: 0;
+    right: -70px;
+  }
+  40% {
+    opacity: 0;
+    right: -70px;
+  }
+  60% {
+    opacity:1;
+    right: 0;
+  }
+  97% {
+    opacity: 1;
+    right: 0;
+  }
+  100% {
+    opacity:0;
+    right: -70px;
+  }
+}
+
+@keyframes header-button {
+  0% {opacity: 0;}
+  60% {opacity:0;}
+  80% {opacity:1;}
+  85% {opacity:0;}
+  90% {opacity:1;}
+  97% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+/* 3 black icons - uppear */
+@keyframes icon-villogo {
+  0% {background: var(--black);}
+  60% {background: var(--black);}
+  70% {background-color: red;}
+  80% {background: var(--black);}
+  90% {background-color: red;}
+  100% {background: var(--black);}
+}

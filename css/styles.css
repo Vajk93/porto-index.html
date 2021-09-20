@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* Get In Touch font in the contact section */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&display=swap');
+
+:root {
+  --blue: #47648b;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+/*============================================================================*/
+/*============================== NAV FELSO ===================================*/
+/*============================================================================*/
+#nav-felso {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 52px;
+}
+
+.nav-felso__bal {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  z-index: 10000;
+}
+
+.nav-felso__jobb {
+  display: flex;
+}
+
+.nav-felso__blog-english {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-felso__cim-tel-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#nav-felso .cim,
+#nav-felso .telefon {
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.usa-flag {
+  width: 18px;
+  height: auto;
+}
+
+#nav-felso i {
+  font-size: .9rem;
+  color: var(--blue);
+  cursor: pointer;
+  padding-right: 10px !important;
+}
+
+#nav-felso a {
+  font-size: 0.75rem;
+  color: #999;
+  text-decoration: none;
+}
+
+#nav-felso .blog {
+  padding-right: 20px;
+}
+
+.nav-felso__jobb button {
+  font-family: poppins, Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #999;
+  padding: 15px 0 15px 20px;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.english-icon {
+  position: relative;
+  top: 1px;
+  font-size: 0.7rem;
+}
+
+.jobb-border {
+  height: 52px;
+  border-right: 1px solid rgba(0, 0, 0, .05);
+}
+
+.english button:focus {
+  outline: none;
+}
+
+/*========================== NYELV KIVÁLASZTÁSA ==============================*/
+.nav-felso__nyelv-kivalasztasa {
+  width: 150px;
+  height: 105px;
+  background-color: var(--white);
+  position: absolute;
+  top: 48px;
+  right: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 2;
+  display: none;
+  font-family: poppins, Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.nav-felso__nyelv-kivalasztasa div {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  margin: 0 auto;
+  background-color: var(--white);
+  width: 95%;
+  cursor: pointer;
+}
+
+.nav-felso__nyelv-kivalasztasa img {
+  padding: 3px;
+  width: 23px;
+}
+
+.nav-felso__nyelv-kivalasztasa div:hover {
+  background-color: #E5E5E5;
+}
+
+/* RESPONSIV ELTŰNÉS / MEGJELENÉS A FELSO NAVBAR-BAN (media_queries fájlban) */
+.blog,
+.mail,
+.cim {
+  display: none;
+}
+
+/*============================================================================*/
+/*========================= NAV ALSO =========================================*/
+/*============================================================================*/
+#nav-also {
+  border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+#nav-also .container {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.sticky {
+  position: fixed;
+  background: var(--white);
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+  opacity: 1;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  padding: auto 0;
+}
+
+.porto-logo {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+#nav-also .linkek-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.linkek-div ul {
+  display: flex;
+}
+
+.linkek-div li {
+  list-style: none;
+}
+
+.linkek-div a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--blue);
+  padding: 38px 15px 36px 15px;
+}
+
+#nav-also .linkek-div a:hover {
+  background: var(--blue);
+  color: var(--white);
+  height: 100%;
+}
+
+.nav-also-icons {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 33px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.bag-icon {
+  width: 26px;
+  padding-left: 10px;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+
+.notification {
+  width: 16px;
+  margin-bottom: 8px;
+  margin-left: -8px;
+  cursor: pointer;
+}
+
+.fa-bars {
+  margin-left: 10px;
+  padding: 12px 15px;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+#nav-also .linkek-div ul {
+  display: none;
+}
+
+/*============================================================================*/
+/*======================== LENYÍLÓ MOBIL NAVBAR ==============================*/
+/*============================================================================*/
+#mobileNav {
+  background: white !important;
+  z-index: 9999;
+  height: 280px !important;
+  position: absolute;
+  width: 100vw;
+  display: none;
+}
+
+.stickyMobile {
+  position: fixed;
+  background: var(--white);
+  top: 87px;
+  width: 100vw;
+  z-index: 10000;
+  opacity: 1;
+  height: 280px;
+  margin: 0 auto;
+}
+
+#mobileNav .container {
+  display: flex;
+  flex-direction: column !important;
+}
+
+#mobileNav .container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 2.5;
+  padding: 0 6px;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  width: 100%;
+}
+
+#mobileNav .container div a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+#mobileNav .container ion-icon {
+  font-size: .8rem;
+}
+
+.mobileNav__home-link-div {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.mobileNav__home-link-div a {
+  color: var(--white) !important;
+}
+
+/*============================================================================*/
+/*============================ HERO ==========================================*/
+/*============================================================================*/
+#hero {
+  margin: 0 auto;
+  overflow:hidden;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  /*justify-content:space-around;*/
+  align-items: center;
+  position:relative;
+  height: 450px;
+  width: 100vw;
+}
+#hero img {
+  opacity: .4;
+  position: absolute;
+}
+#hero h1,
+#hero p,
+#hero a {
+  color:white;
+}
+.header-hello-text {
+animation: header-hello-text 5s infinite;
+position: relative;
+top: 120px;
+}
+
+.header-title-h1-1 {
+animation: header-title-h1-1 5s infinite;
+position: relative;
+top: 140px;
+font-size: 2em;
+text-align: center;
+t
+}
+
+.header-also-p-1 {
+  animation: header-also-p-1 5s infinite;
+  position: relative;
+  top: 160px;
+  text-align: center;
+}
+
+#hero a {
+  animation: header-button 5s infinite;
+-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: var(--white);
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 18px 40px;
+  background-color: ;
+  border: solid var(--white) 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 200ms;
+  position: relative;
+  top: 180px;
+}
+#hero a:hover {
+  border: 2px solid var(--white);
+  color:var(--white);
+  background:rgba(0, 0, 0, .5);
+  transition: 200ms;
+}
+
+
+
+/*============================================================================*/
+/*========================= 3 BLACK LEFT ICONS  ==============================*/
+/*============================================================================*/
+#fixed-icons {
+  display: none;
+}
+
+#fixed-icons i:nth-child(1) {
+  position: fixed;
+  left: 0;
+  top: 135px;
+  background: var(--black);
+  padding: 13px;
+  border-radius: 3px;
+  color: var(--white);
+  width: 40px;
+  z-index: 10000;
+  cursor: pointer;
+  animation: 3s icon-villogo infinite;
+}
+
+.button-1 {
+  position: fixed;
+  left: 45px;
+  top: 140px;
+  background: var(--black);
+  padding: 13px;
+  border-color: var(--black);
+  border-radius: 3px;
+  color: var(--white);
+  width: auto;
+  height: 20px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+#fixed-icons i:nth-child(1):hover .button-1 {
+  display: flex;
+}
+
+#fixed-icons i:nth-child(2) {
+  position: fixed;
+  left: 0;
+  top: 174px;
+  background: var(--black);
+  padding: 13px 13px 13px 12px;
+  border-radius: 3px;
+  color: var(--white);
+  width: 40px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.button-2 {
+  position: fixed;
+  left: 45px;
+  top: 179px;
+  background: var(--black);
+  padding: 13px;
+  border-color: var(--black);
+  border-radius: 3px;
+  color: var(--white);
+  width: auto;
+  height: 20px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+#fixed-icons i:nth-child(2):hover .button-2 {
+  display: flex;
+}
+
+#fixed-icons img {
+  position: fixed;
+  left: 0;
+  top: 213px;
+  background: var(--black);
+  padding: 13px;
+  border-radius: 3px;
+  color: var(--white);
+  width: 40px;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+#fixed-icons p {
+  font-weight: 300;
+  font-size: .8rem;
+  color: lightgrey;
+  position: fixed;
+  left: 45px;
+  top: 221px;
+  background: var(--black);
+  padding: 13px;
+  border-color: var(--black);
+  border-radius: 3px;
+  color: var(--white);
+  width: auto;
+  height: 20px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+#fixed-icons div:hover p {
+  display: flex;
+  z-index: 10000;
+}
+
+/*============================================================================*/
+/*=========================== COLOR CHANGER ==================================*/
+/*============================================================================*/
+.color-changer {
+  position: absolute;
+  position: fixed;
+  top: 154px;
+  left: 50px;
+  height: 55vh;
+  width: 350px;
+  background: var(--white);
+  z-index: 100;
+  border: 3px solid var(--blue);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  font-family: 'Poppins', sans-serif;
+  z-index: 9981;
+}
+
+.color-changer__belso-div {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  text-align: center;
+}
+
+#colorChanger p {
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  transition: 200ms;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family:
+}
+
+#colorChanger p:nth-child(1) {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+#colorChanger p:nth-child(2) {
+  background: var(--blue);
+  border: 3px solid var(--blue);
+  color: var(--white);
+}
+
+#colorChanger p:nth-child(2):hover {
+  background: var(--white);
+  color: red;
+  border: 3px solid red;
+  transition: 200ms;
+}
+
+#colorChanger p:nth-child(3) {
+  background: var(--blue);
+  border: 3px solid var(--blue);
+  margin: 10px auto;
+  color: var(--white);
+}
+
+#colorChanger p:nth-child(3):hover {
+  background: var(--white);
+  color: green;
+  border: 3px solid green;
+  transition: 200ms;
+}
+
+#colorChanger p:nth-child(4) {
+  background: var(--blue);
+  border: 3px solid var(--blue);
+  color: var(--white);
+}
+
+#colorChanger p:nth-child(4):hover {
+  background: var(--white);
+  color: orange;
+  border: 3px solid orange;
+  transition: 200ms;
+}
+
+#colorChanger p:nth-child(5) {
+  margin-top: 40px;
+  color: var(--white);
+  background: var(--blue);
+  border: 3px solid var(--blue);
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+#colorChanger p:nth-child(5):hover {
+  color: var(--blue);
+  background: var(--white);
+  border: 3px solid var(--blue);
+  transition: 200ms;
+}
+
+@media screen and (max-width: 740px) {
+  .color-changer {
+    display: none !important;
+  }
+}
+
+/*============================================================================*/
+/*======================== BEMUTATKOZÁS - HERO ALATT =========================*/
+/*============================================================================*/
+#bemutatkozas {
+  padding-top: 0;
+  padding-bottom: 45px;
+}
+
+.main-element1,
+.main-element2,
+.main-element3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.main-leiras {
+  height: 150px;
+}
+
+.main-kicsi-1-text-div {
+  padding-top: 24px;
+}
+
+.egy-nagy, .kicsi1, .kicsi2, .kicsi3, .kicsi4 {
+  height: 100%;
+}
+
+.lorem-negy-kicsi {
+  font-size: .8rem;
+  line-height: 2;
+  padding-top: 10px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+#bemutatkozas section h3 {
+  font-size: 1.1rem;
+  color: var(--black);
+}
+
+.kicsi1, .kicsi2, .kicsi3, .kicsi4 {
+  height: 30%;
+  display: flex;
+}
+
+#bemutatkozas i {
+  font-size: 1.6rem;
+  color: var(--blue);
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  padding-top: 105px;
+  color: var(--black);
+}
+
+.main-lorem-1 {
+  font-size: .8rem;
+  line-height: 2;
+  padding-top: 24px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.main-lorem-2 {
+  font-size: .8rem;
+  line-height: 2;
+  padding-top: 24px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.main-view-more {
+  color: var(--blue);
+  margin-top: 24px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 5px;
+  width: 6rem;
+}
+
+.main-view-more:hover {
+  border-radius: 4px;
+  background: var(--blue);
+  color: var(--white);
+}
+
+.main-view-more:hover .main-view-more-icon {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.main-view-more-icon {
+  position: relative;
+  font-size: .9rem;
+  color: var(--blue);
+  top: 3px;
+}
+
+/*============================================================================*/
+/*============================= 5 IMAGE ======================================*/
+/*============================================================================*/
+.five-image-title {
+  padding-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  color: var(--black);
+}
+
+#five-image {
+  display: flex;
+  flex-direction: column;
+}
+
+#five-image div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: black;
+}
+
+#five-image img {
+  width: 100%;
+  transition: 400ms;
+}
+
+#five-image i {
+  position: absolute;
+  font-size: 1rem;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 17px;
+  background: var(--blue);
+}
+
+#five-image p {
+  position: absolute;
+  top: 42%;
+  color: var(--white);
+  font-size: .9rem;
+}
+
+#five-image a {
+  position: absolute;
+  top: 48%;
+  padding: 7px 12px;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--blue);
+  font-size: .6rem;
+  text-transform: uppercase;
+}
+
+#five-image i,
+#five-image p,
+#five-image a {
+  opacity: 0;
+  transition: 400ms;
+}
+
+#five-image div:hover i,
+#five-image div:hover p,
+#five-image div:hover a {
+  opacity: 1;
+  transition: 400ms;
+}
+
+#five-image div:hover img {
+  transform: scale(1.2);
+  transition: 400ms;
+  opacity: .5;
+}
+
+/*============================================================================*/
+/*========================= WIREFRAMES =======================================*/
+/*============================================================================*/
+#wireframes {
+  margin: 0 auto;
+}
+
+#wireframes .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+}
+
+#wireframes img {
+  display: flex;
+  width: 300px;
+  opacity: .3;
+  transition: 300ms;
+}
+
+#wireframes img:hover {
+  opacity: 1;
+  transition: 300ms;
+}
+
+#wireframes .tablet-view,
+#wireframes .desktop-view {
+  display: none;
+}
+
+/*============================================================================*/
+/*========================== TESTIMONIAL =====================================*/
+/*============================================================================*/
+#testimonial {
+  height: 590px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+}
+
+#testimonial .container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--blue);
+}
+
+.idezojel-icon-1 {
+  color: white;
+  padding-top: 60px;
+}
+
+.idezojel-icon-2 {
+  color: white;
+  padding-top: 340px;
+}
+
+.testimonial__tartalom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonial img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.ertekeles-lorem {
+  padding: 30px 0;
+  text-align: center;
+  line-height: 1.6;
+  color: white;
+  font-size: 18px;
+  opacity: .7;
+  font-family: 'Playfair Display', serif;
+}
+
+#testimonial p {
+  color: white;
+  font-weight: 600;
+  font-size: .7rem;
+}
+
+/*============================================================================*/
+/*======================== POSTS =============================================*/
+/*============================================================================*/
+#posts {
+  padding-bottom: 100px;
+}
+
+#posts section {
+  display: flex;
+  flex-direction: row;
+}
+
+#posts h4 {
+  font-weight: 600;
+  transition: 200ms;
+  color: var(--black);
+}
+
+#posts h4:hover {
+  color: var(--blue);
+  transition: 200ms;
+}
+
+#posts p {
+  font-size: .8rem;
+  opacity: 0.5;
+  line-height: 2.3;
+}
+
+#posts a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-top: 5px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+#posts img {
+  position: relative;
+  width: 42px;
+  top: 5px;
+}
+
+.utolso-negyes-elemek {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#posts p:nth-child(1) {
+  font-size: 1.5rem;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  opacity: 1;
+  color: var(--black);
+}
+
+.naptar-elem-kep {
+  padding: 0 15px 0 0;
+}
+
+#posts a:hover {
+  border-bottom: 1px solid var(--black);
+}
+
+.kis-naptar-read-more-icon {
+  position: relative;
+  top: 3px;
+  font-size: .8rem;
+}
+
+/*============================================================================*/
+/*========================== CONTACT =========================================*/
+/*============================================================================*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #212529;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.get-in-touch {
+  position: relative;
+  top: 28px;
+  left: 0;
+  background: var(--blue);
+  color: var(--white);
+  width: 150px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.3rem;
+}
+
+.kapcsolat-div-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 90%;
+}
+
+.kapcsolat-porto-logo {
+  width: 75px;
+  opacity: .7;
+}
+
+.kapcsolat-lorem-div {
+  color: var(--white);
+  opacity: .4;
+  font-size: 0.8rem;
+  font-weight: 200;
+  line-height: 2;
+  max-width: 90%;
+}
+
+.kapcsolat-view-more {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.kapcsolat-view-more:hover {
+  color: lightgrey;
+}
+
+.kapcsolat-view-more-icon {
+  color: var(--white);
+  font-size: 0.7rem;
+}
+
+/*========================== CONTACT 2 =======================================*/
+.kapcsolat-div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.kapcsolat-contact-us {
+  font-size: .7rem;
+  padding-bottom: 20px;
+  color: var(--white);
+  margin-top: 50px;
+}
+
+.kapcsolat-contact-text {
+  color: var(--white);
+  opacity: .4;
+  font-size: 0.8rem;
+  font-weight: 200;
+  line-height: 3;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.kapcsolat-contact-text:hover {
+  opacity: 1;
+  transition: 200ms;
+}
+
+.kapcsolat-icon-es-text-div {
+  display: flex;
+}
+
+.kapcsolat-icon {
+  padding-top: 14px;
+  padding-right: 12px;
+  color: var(--blue);
+}
+.contact__tel {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/*========================== CONTACT 3 =======================================*/
+.kapcsolat-div-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.kapcsolat-3-icon-es-p {
+  display: flex;
+  flex-direction: row;
+}
+
+.kapcsolat-3-icon {
+  color: var(--blue);
+  font-size: 0.65rem;
+  padding-right: 10px;
+  margin-top: 8px;
+}
+
+.kapcsolat-3-contact-text {
+  color: var(--white);
+  opacity: .4;
+  font-size: 0.7rem;
+  font-weight: 200;
+  line-height: 2.6;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.kapcsolat-3-contact-text:hover {
+  opacity: 1;
+  padding-left: 6px;
+  transition: 200ms;
+}
+
+/*============================================================================*/
+/*============================= FOOTER =======================================*/
+/*============================================================================*/
+#footer {
+  width: 100vw;
+  height: 100px;
+  background: #212529;
+  border-top: 1px solid #343434;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+}
+
+#footer:hover p,
+#footer:hover a {
+  opacity: 1;
+  transition: 200ms;
+}
+
+#footer p {
+  color: var(--white);
+  color: var(--white);
+  opacity: .3;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+#footer a {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  color: black;
+  color: var(--white);
+  color: var(--white);
+  opacity: .3;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+#footer i {
+  color: #4267B2;
+  cursor: pointer;
+}
